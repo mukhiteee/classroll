@@ -3,39 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+   
     <!-- Primary Meta Tags -->
-    <title>ClassRoll - 200 Level COEN Student Data</title>
-    <meta name="title" content="ClassRoll - 200 Level COEN Student Data">
-    <meta name="description" content="Register your 200 level COEN student information with ClassRoll. Quick and secure student data collection platform for academic institutions. Fill out your registration details in seconds.">
-    <meta name="keywords" content="student registration, class roster, student data collection, academic registration, university registration, college enrollment">
-    <meta name="author" content="ClassRoll">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com/">
-    <meta property="og:title" content="ClassRoll - Student Registration">
-    <meta property="og:description" content="Register your student information with ClassRoll. Quick and secure student data collection platform for academic institutions.">
-    <meta property="og:image" content="https://yourwebsite.com/preview-image.png">
-    
-    <!-- Twitter -->
-    <!--    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://yourwebsite.com/">
-    <meta property="twitter:title" content="ClassRoll - Student Registration">
-    <meta property="twitter:description" content="Register your student information with ClassRoll. Quick and secure student data collection platform for academic institutions.">
-    <meta property="twitter:image" content="https://yourwebsite.com/preview-image.png"> -->
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png">
-    
+    <title>ClassRoll - Registration Closed</title>
+    <meta name="title" content="ClassRoll - Registration Closed">
+    <meta name="description" content="Student registration is currently closed. Please check back later or contact your administrator.">
+    <meta name="robots" content="noindex, nofollow">
+   
     <!-- Theme Color -->
     <meta name="theme-color" content="#0ea5e9">
-    <meta name="msapplication-TileColor" content="#0ea5e9">
-    
+   
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📚</text></svg>">
+   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+   
     <style>
         :root {
             --bg-primary: #fafafa;
@@ -45,8 +29,7 @@
             --accent: #0ea5e9;
             --accent-light: #e0f2fe;
             --border: #e5e5e5;
-            --success: #16a34a;
-            --error: #dc2626;
+            --warning: #f59e0b;
             --shadow: rgba(0, 0, 0, 0.08);
         }
 
@@ -58,6 +41,7 @@
             --accent: #38bdf8;
             --accent-light: #0c2d3d;
             --border: #262626;
+            --warning: #fbbf24;
             --shadow: rgba(0, 0, 0, 0.4);
         }
 
@@ -78,7 +62,7 @@
             padding: 2rem;
             transition: background-color 0.3s ease, color 0.3s ease;
             position: relative;
-            overflow-x: hidden;
+            overflow: hidden;
         }
 
         /* Decorative background elements */
@@ -94,77 +78,6 @@
             transform: rotate(-15deg);
             pointer-events: none;
             z-index: 0;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 580px;
-            position: relative;
-            z-index: 1;
-            animation: fadeInUp 0.6s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 3rem;
-            animation: fadeIn 0.8s ease-out 0.2s both;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .logo {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            font-weight: 800;
-            color: white;
-            font-size: 1.5rem;
-            transform: rotate(-5deg);
-        }
-
-        .logo-text {
-            font-size: 1.5rem;
-            font-weight: 800;
-            letter-spacing: -0.02em;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            letter-spacing: -0.03em;
-            line-height: 1.1;
-        }
-
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 1rem;
-            font-family: 'DM Mono', monospace;
         }
 
         .theme-toggle {
@@ -197,174 +110,7 @@
             transition: transform 0.3s ease;
         }
 
-        .form-card {
-            background: var(--bg-secondary);
-            border: 2px solid var(--border);
-            border-radius: 16px;
-            padding: 2.5rem;
-            box-shadow: 0 8px 24px var(--shadow);
-            animation: slideIn 0.6s ease-out 0.3s both;
-        }
-
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .form-group {
-            margin-bottom: 1.75rem;
-            animation: fadeIn 0.5s ease-out both;
-        }
-
-        .form-group:nth-child(1) { animation-delay: 0.4s; }
-        .form-group:nth-child(2) { animation-delay: 0.5s; }
-        .form-group:nth-child(3) { animation-delay: 0.6s; }
-        .form-group:nth-child(4) { animation-delay: 0.7s; }
-
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: var(--text-primary);
-            font-family: 'DM Mono', monospace;
-            letter-spacing: 0.02em;
-        }
-
-        .required {
-            color: var(--accent);
-            margin-left: 0.25rem;
-        }
-
-        .input-wrapper {
-            position: relative;
-        }
-
-        input {
-            width: 100%;
-            padding: 0.875rem 1rem;
-            font-size: 1rem;
-            font-family: 'Bricolage Grotesque', sans-serif;
-            background: var(--bg-primary);
-            border: 2px solid var(--border);
-            border-radius: 10px;
-            color: var(--text-primary);
-            transition: all 0.3s ease;
-            outline: none;
-        }
-
-        input:focus {
-            border-color: var(--accent);
-            background: var(--bg-secondary);
-            box-shadow: 0 0 0 4px var(--accent-light);
-        }
-
-        input.error {
-            border-color: var(--error);
-        }
-
-        input.success {
-            border-color: var(--success);
-        }
-
-        .phone-input {
-            display: flex;
-            gap: 0.5rem;
-        }
-
-        .phone-prefix-inner {
-            flex-shrink: 0;
-            width: 40px;
-            background: var(--bg-primary);
-            border: 2px solid var(--border);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 600;
-            font-family: 'DM Mono', monospace;
-            color: var(--text-secondary);
-            margin-left: 0;
-        }
-
-        #phoneInput {
-            flex: 1;
-        }
-
-        .error-message {
-            display: none;
-            color: var(--error);
-            font-size: 0.85rem;
-            margin-top: 0.5rem;
-            font-family: 'DM Mono', monospace;
-            animation: shake 0.3s ease;
-        }
-
-        .error-message.show {
-            display: block;
-        }
-
-        @keyframes shake {
-            0%, 100% { transform: translateX(0); }
-            25% { transform: translateX(-5px); }
-            75% { transform: translateX(5px); }
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 1rem;
-            font-size: 1.1rem;
-            font-weight: 700;
-            font-family: 'Bricolage Grotesque', sans-serif;
-            background: var(--accent);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 1rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .submit-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .submit-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(14, 165, 233, 0.4);
-        }
-
-        .submit-btn:hover::before {
-            left: 100%;
-        }
-
-        .submit-btn:active {
-            transform: translateY(0);
-        }
-
-        .submit-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        .success-modal {
-            display: none;
+        .modal-overlay {
             position: fixed;
             top: 0;
             left: 0;
@@ -373,24 +119,28 @@
             background: rgba(0, 0, 0, 0.6);
             backdrop-filter: blur(8px);
             z-index: 1000;
+            display: flex;
             align-items: center;
             justify-content: center;
             animation: fadeIn 0.3s ease;
         }
 
-        .success-modal.show {
-            display: flex;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
 
-        .success-content {
+        .modal-content {
             background: var(--bg-secondary);
             border: 2px solid var(--border);
             border-radius: 20px;
             padding: 3rem 2.5rem;
-            max-width: 450px;
+            max-width: 500px;
+            width: 90%;
             text-align: center;
             animation: bounceIn 0.5s ease;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            position: relative;
         }
 
         @keyframes bounceIn {
@@ -400,17 +150,17 @@
             }
             60% {
                 opacity: 1;
-                transform: scale(1.1) translateY(0);
+                transform: scale(1.05) translateY(0);
             }
             100% {
                 transform: scale(1);
             }
         }
 
-        .success-icon {
+        .icon-wrapper {
             width: 80px;
             height: 80px;
-            background: var(--success);
+            background: var(--warning);
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -424,70 +174,76 @@
             50% { transform: scale(1.05); }
         }
 
-        .success-icon::before {
-            content: '✓';
-            color: white;
-            font-size: 3rem;
-            font-weight: bold;
+        .icon-wrapper svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
         }
 
-        .success-content h2 {
+        .modal-content h1 {
             font-size: 2rem;
             font-weight: 800;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
             color: var(--text-primary);
+            letter-spacing: -0.02em;
         }
 
-        .success-content p {
+        .modal-content p {
             color: var(--text-secondary);
-            margin-bottom: 2rem;
-            font-family: 'DM Mono', monospace;
-        }
-
-        .close-btn {
-            background: var(--accent);
-            color: white;
-            border: none;
-            padding: 0.875rem 2rem;
-            border-radius: 10px;
-            font-weight: 700;
-            font-family: 'Bricolage Grotesque', sans-serif;
-            cursor: pointer;
-            transition: all 0.3s ease;
+            margin-bottom: 0.75rem;
             font-size: 1rem;
+            line-height: 1.6;
         }
 
-        .close-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 16px rgba(14, 165, 233, 0.4);
+        .modal-content p.highlight {
+            font-family: 'DM Mono', monospace;
+            font-size: 0.9rem;
+            background: var(--accent-light);
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            color: var(--text-primary);
+            border-left: 3px solid var(--accent);
         }
 
-        .spinner {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            border-top-color: white;
-            border-radius: 50%;
-            animation: spin 0.6s linear infinite;
-            margin-left: 0.5rem;
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
         }
 
-        @keyframes spin {
-            to { transform: rotate(360deg); }
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 6px;
+            font-weight: 800;
+            color: white;
+            font-size: 1.2rem;
+            transform: rotate(-5deg);
+        }
+
+        .logo-text {
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text-secondary);
         }
 
         @media (max-width: 640px) {
-            body {
-                padding: 1rem;
+            .modal-content {
+                padding: 2rem 1.5rem;
+                margin: 1rem;
             }
 
-            h1 {
-                font-size: 2rem;
-            }
-
-            .form-card {
-                padding: 1.5rem;
+            .modal-content h1 {
+                font-size: 1.75rem;
             }
 
             .theme-toggle {
@@ -495,11 +251,6 @@
                 right: 1rem;
                 width: 44px;
                 height: 44px;
-            }
-
-            .success-content {
-                margin: 1rem;
-                padding: 2rem 1.5rem;
             }
         }
     </style>
@@ -511,104 +262,34 @@
         </svg>
     </button>
 
-    <div class="container">
-        <div class="header">
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <div class="icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+            </div>
+           
+            <h1>Registration Closed</h1>
+           
+            <!-- <p>
+                Thank you for your interest in ClassRoll.
+            </p> -->
+           
+            <p>
+                Student registration is currently closed. The registration period has ended and we are no longer accepting new submissions at this time.
+            </p>
+           
+            <!-- <p class="highlight">
+                If you believe this is an error or need assistance, please contact your administrator.
+            </p> -->
+
             <div class="logo">
                 <div class="logo-icon">C</div>
                 <span class="logo-text">ClassRoll</span>
             </div>
-            <h1>200 Level COEN Student Data</h1>
-            <p class="subtitle"></p>
-        </div>
-
-        <div class="form-card">
-            <form id="studentForm" novalidate>
-                <div class="form-group">
-                    <label for="regNumber">
-                        Registration Number<span class="required">*</span>
-                    </label>
-                    <div class="input-wrapper">
-                        <input 
-                            type="text" 
-                            id="regNumber" 
-                            name="regNumber"
-                            placeholder="U24CO1000"
-                            maxlength="10"
-                            required
-                            autocomplete="off"
-                        >
-                        <div class="error-message" id="regNumberError"></div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="fullName">
-                        Full Name<span class="required">*</span>
-                    </label>
-                    <div class="input-wrapper">
-                        <input 
-                            type="text" 
-                            id="fullName" 
-                            name="fullName"
-                            placeholder="John Doe"
-                            required
-                            autocomplete="name"
-                        >
-                        <div class="error-message" id="fullNameError"></div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">
-                        Email Address<span class="required">*</span>
-                    </label>
-                    <div class="input-wrapper">
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email"
-                            placeholder="john.doe@example.com"
-                            required
-                            autocomplete="email"
-                        >
-                        <div class="error-message" id="emailError"></div>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="phoneInput">
-                        Phone Number<span class="required">*</span>
-                    </label>
-                    <div class="input-wrapper">
-                        <div class="phone-input">
-                            <div class="phone-prefix-inner">0</div>
-                            <input 
-                                type="tel" 
-                                id="phoneInput" 
-                                name="phone"
-                                placeholder="08000000000"
-                                maxlength="11"
-                                required
-                                autocomplete="tel"
-                            >
-                        </div>
-                        <div class="error-message" id="phoneError"></div>
-                    </div>
-                </div>
-
-                <button type="submit" class="submit-btn" id="submitBtn">
-                    Submit Registration
-                </button>
-            </form>
-        </div>
-    </div>
-
-    <div class="success-modal" id="successModal">
-        <div class="success-content">
-            <div class="success-icon"></div>
-            <h2>Success!</h2>
-            <p>Your registration has been submitted successfully.</p>
-            <button class="close-btn" id="closeModal">Done</button>
         </div>
     </div>
 
@@ -620,7 +301,7 @@
 
         // Sun icon SVG
         const sunIcon = '<path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>';
-        
+       
         // Moon icon SVG
         const moonIcon = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
 
@@ -646,217 +327,6 @@
             const currentTheme = html.getAttribute('data-theme');
             const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             setTheme(newTheme);
-        });
-
-        // Form Validation
-        const form = document.getElementById('studentForm');
-        const regNumberInput = document.getElementById('regNumber');
-        const fullNameInput = document.getElementById('fullName');
-        const emailInput = document.getElementById('email');
-        const phoneInput = document.getElementById('phoneInput');
-        const submitBtn = document.getElementById('submitBtn');
-        const successModal = document.getElementById('successModal');
-        const closeModalBtn = document.getElementById('closeModal');
-
-        // Auto-uppercase for registration number
-        regNumberInput.addEventListener('input', (e) => {
-            e.target.value = e.target.value.toUpperCase();
-        });
-
-        // Phone number - only allow digits
-        phoneInput.addEventListener('input', (e) => {
-            e.target.value = e.target.value.replace(/\D/g, '');
-        });
-
-        // Validation functions
-        const validateRegNumber = (value) => {
-            const pattern = /^U\d{2}CO\d{4}$/;
-            return pattern.test(value);
-        };
-
-        const validateFullName = (value) => {
-            return value.trim().length >= 3;
-        };
-
-        const validateEmail = (value) => {
-            const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            return pattern.test(value);
-        };
-
-        const validatePhone = (value) => {
-            return value.length === 10 && /^\d{10}$/.test(value);
-        };
-
-        const showError = (input, errorElement, message) => {
-            input.classList.add('error');
-            input.classList.remove('success');
-            errorElement.textContent = message;
-            errorElement.classList.add('show');
-        };
-
-        const showSuccess = (input, errorElement) => {
-            input.classList.remove('error');
-            input.classList.add('success');
-            errorElement.classList.remove('show');
-        };
-
-        const clearValidation = (input, errorElement) => {
-            input.classList.remove('error', 'success');
-            errorElement.classList.remove('show');
-        };
-
-        // Real-time validation
-        regNumberInput.addEventListener('blur', () => {
-            const value = regNumberInput.value;
-            const errorElement = document.getElementById('regNumberError');
-            
-            if (!value) {
-                showError(regNumberInput, errorElement, 'Registration number is required');
-            } else if (!validateRegNumber(value)) {
-                showError(regNumberInput, errorElement, 'Format: U##CO#### (e.g., U24CO1000)');
-            } else {
-                showSuccess(regNumberInput, errorElement);
-            }
-        });
-
-        fullNameInput.addEventListener('blur', () => {
-            const value = fullNameInput.value;
-            const errorElement = document.getElementById('fullNameError');
-            
-            if (!value) {
-                showError(fullNameInput, errorElement, 'Full name is required');
-            } else if (!validateFullName(value)) {
-                showError(fullNameInput, errorElement, 'Please enter your full name (min 3 characters)');
-            } else {
-                showSuccess(fullNameInput, errorElement);
-            }
-        });
-
-        emailInput.addEventListener('blur', () => {
-            const value = emailInput.value;
-            const errorElement = document.getElementById('emailError');
-            
-            if (!value) {
-                showError(emailInput, errorElement, 'Email address is required');
-            } else if (!validateEmail(value)) {
-                showError(emailInput, errorElement, 'Please enter a valid email address');
-            } else {
-                showSuccess(emailInput, errorElement);
-            }
-        });
-
-        phoneInput.addEventListener('blur', () => {
-            const value = phoneInput.value;
-            const errorElement = document.getElementById('phoneError');
-            
-            if (!value) {
-                showError(phoneInput, errorElement, 'Phone number is required');
-            } else if (!validatePhone(value)) {
-                showError(phoneInput, errorElement, 'Please enter 10 digits after 0 (e.g., 8012345678)');
-            } else {
-                showSuccess(phoneInput, errorElement);
-            }
-        });
-
-        // Form submission
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            // Validate all fields
-            let isValid = true;
-
-            const regNumberValue = regNumberInput.value;
-            const regNumberError = document.getElementById('regNumberError');
-            if (!validateRegNumber(regNumberValue)) {
-                showError(regNumberInput, regNumberError, 'Invalid registration number format');
-                isValid = false;
-            }
-
-            const fullNameValue = fullNameInput.value;
-            const fullNameError = document.getElementById('fullNameError');
-            if (!validateFullName(fullNameValue)) {
-                showError(fullNameInput, fullNameError, 'Please enter your full name');
-                isValid = false;
-            }
-
-            const emailValue = emailInput.value;
-            const emailError = document.getElementById('emailError');
-            if (!validateEmail(emailValue)) {
-                showError(emailInput, emailError, 'Please enter a valid email');
-                isValid = false;
-            }
-
-            const phoneValue = phoneInput.value;
-            const phoneError = document.getElementById('phoneError');
-            if (!validatePhone(phoneValue)) {
-                showError(phoneInput, phoneError, 'Please enter 10 digits after 0 (e.g., 8012345678)');
-                isValid = false;
-            }
-
-            if (!isValid) {
-                return;
-            }
-
-            // Prepare data for Google Sheets
-            const formData = {
-                regNumber: regNumberValue,
-                fullName: fullNameValue,
-                email: emailValue,
-                phone: `0${phoneValue}` // Format: 0##########
-            };
-
-            // Disable button and show loading
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = 'Submitting<span class="spinner"></span>';
-
-            try {
-                // Replace this URL with your Google Apps Script Web App URL
-                const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbykVDMO2iLBUGqeo3KMkpKubhmbkbrD_UlrCnwbPuPrPPsvibNV86V1CZ41Ea-YNZrqSw/exec';
-                
-                const response = await fetch(GOOGLE_SCRIPT_URL, {
-                    method: 'POST',
-                    mode: 'no-cors', // Important for Google Apps Script
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                // Since we're using no-cors, we won't get a readable response
-                // Assume success if no error is thrown
-                
-                // Show success modal
-                successModal.classList.add('show');
-
-                // Reset form
-                form.reset();
-                
-                // Clear all validation states
-                clearValidation(regNumberInput, regNumberError);
-                clearValidation(fullNameInput, fullNameError);
-                clearValidation(emailInput, emailError);
-                clearValidation(phoneInput, phoneError);
-
-            } catch (error) {
-                console.error('Error submitting form:', error);
-                alert('There was an error submitting your data. Please try again.');
-            } finally {
-                // Re-enable button
-                submitBtn.disabled = false;
-                submitBtn.textContent = 'Submit Registration';
-            }
-        });
-
-        // Close modal
-        closeModalBtn.addEventListener('click', () => {
-            successModal.classList.remove('show');
-        });
-
-        // Close modal when clicking outside
-        successModal.addEventListener('click', (e) => {
-            if (e.target === successModal) {
-                successModal.classList.remove('show');
-            }
         });
     </script>
 </body>
